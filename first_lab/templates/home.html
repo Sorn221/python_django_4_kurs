@@ -8,12 +8,12 @@
 
     {% extends 'base.html' %}
     {% block content %}
-    <h1>Message board</h1>
-    <ul>
         {% for post in object_list %}
-            <li>{{ post }}</li>
+            <div class="post-entry">
+                <h2><a href="">{{ post.title }}</a></h2>
+                <p> {{ post.body }}</p>
+            </div>
         {% endfor %}
-    </ul>
     {% endblock %}
 
 </body>
