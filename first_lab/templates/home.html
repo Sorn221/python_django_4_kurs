@@ -1,13 +1,20 @@
-<! DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
 </head>
 <body>
+
     {% extends 'base.html' %}
     {% block content %}
-    <h1>Homepage</h1>
+    <h1>Message board</h1>
+    <ul>
+        {% for post in object_list %}
+            <li>{{ post }}</li>
+        {% endfor %}
+    </ul>
     {% endblock %}
+
 </body>
 </html>
