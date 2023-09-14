@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+    {% block content %}
+        <div class="post-entry">
+        <h2>
+            {{ blog_post.title }}
+        </h2>
+        <p>{{ blog_post.body }}</p>
+        <a href="{% url 'post_edit' blog_post.pk%}">+Редактировать</a>
+        <p><a href="{% url 'delete_post' blog_post.pk%}">+Удалить</a></p>
+        </div>
+    {% endblock %}

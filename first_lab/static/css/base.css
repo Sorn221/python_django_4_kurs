@@ -1,6 +1,13 @@
-h1{
-    color: red;
+a{
+    color: aqua;
 }
 body {
     background: grey;
+}
+header{
+    display: flex;
+
+}
+h1{
+    margin: 50px;
 }
